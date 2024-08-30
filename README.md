@@ -1,24 +1,33 @@
-# README
+# ruby_on_rails_gerlessver
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ruby_on_rails https://github.com/juniormesquitadandao/gerlessver/tree/master/ruby_on_rails
 
-Things you may want to cover:
+git clone ...
+cd project
+  ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose config
+  ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose build
+  docker compose up -d
+  docker compose exec app bash
+    cat /etc/hosts | grep dockerhost
+    echo > /dev/tcp/dockerhost/5432 && echo "Postgresql is running"
+    echo > /dev/tcp/dockerhost/6379 && echo "Redis is running"
 
-* Ruby version
+  bundle
+  npm install
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    # Set host: dockerhost in file config/database.yml
+  rails db:create
+    RAILS_ENV=test rails db:create
+    rails c
+      Redis.new.keys
+      exit
+    rails s
+    
+     # Brower: http://localhost:3000
+     # Press: CTRL+C
+   git status
+   git add .
+   git commit -m 'update'
+   git push
+    exit
+  docker compose down
