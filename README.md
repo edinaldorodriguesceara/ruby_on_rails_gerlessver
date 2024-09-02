@@ -1,6 +1,6 @@
 # ruby_on_rails_gerlessver
 
- https://github.com/juniormesquitadandao/gerlessver/tree/master/ruby_on_rails
+https://github.com/juniormesquitadandao/gerlessver
 
 ```bash
 git clone...
