@@ -36,5 +36,5 @@ jobs:
       - run:
           name: Test
           command: |
-            docker compose exec app rails db:create
+            docker compose exec app RAILS_ENV=test rails db:create
             docker compose exec app rails test
