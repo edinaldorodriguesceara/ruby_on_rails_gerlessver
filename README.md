@@ -1,5 +1,7 @@
 # ruby_on_rails_gerlessver
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/edinaldorodriguesceara/ruby_on_rails_gerlessver/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/edinaldorodriguesceara/ruby_on_rails_gerlessver/tree/main)
+
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/411px-Ruby_On_Rails_Logo.svg.png" alt="Ruby on Rails Logo" width="300"/>
