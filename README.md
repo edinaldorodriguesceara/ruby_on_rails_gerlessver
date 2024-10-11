@@ -9,8 +9,8 @@
 https://github.com/juniormesquitadandao/gerlessver
 
 ```bash
-git clone...
-cd project
+git clone git@github.com:edinaldorodriguesceara/ruby_on_rails_gerlessver.git
+cd ruby_on_rails_gerlessver
 
   ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose config
   ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose build
