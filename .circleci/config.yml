@@ -17,8 +17,8 @@ jobs:
       - run:
           name: Build
           command: |
-            ARG_USER_UID=1000 ARG_USER_GID=1000 docker compose config
-            ARG_USER_UID=1000 ARG_USER_GID=1000 docker compose build
+            ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose config
+            ARG_USER_UID=$(id -u) ARG_USER_GID=$(id -g) docker compose build
       - restore_cache:
           name: Restore Cache
           key: '{{ checksum "Gemfile.lock" }}'
