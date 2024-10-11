@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: !
+          command: |
             ARG_USER_UID=1000 ARG_USER_GID=1000 docker compose config
             ARG_USER_UID=1000 ARG_USER_GID=1000 docker compose build
       - restore_cache:
@@ -35,6 +35,6 @@ jobs:
             - tmp
       - run:
           name: Test
-          command: !
+          command: |
             docker compose exec app rails db:create
             docker compose exec app rails test
