@@ -12,7 +12,7 @@ services:
     depends_on:
       - postgresql
       - redis
-    working_dir: /home/user/project
+    working_dir: /home/user/ruby_on_rails_gerlessver
     environment:
       BINDING: 0.0.0.0
       PORT: 3000
@@ -28,7 +28,7 @@ services:
       - ~/.ssh:/home/user/.ssh
       - ~/.gitconfig:/home/user/.gitconfig
       - ~/.bash_history:/home/user/.bash_history
-      - .:/home/user/project
+      - .:/home/user/ruby_on_rails_gerlessver
   postgresql:
     image: postgres:14
     environment:
